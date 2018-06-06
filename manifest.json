@@ -1,0 +1,14 @@
+{
+  "name": "Pointless Averager",
+  "description": "Average grades which have no points.",
+  "manifest_version": 2,
+  "version": "0.1",
+  "background": {"scripts": ["bg.js"]},
+  "page_action": {"default_popup": "popup.html"},
+  "permissions": [
+	"http://*.engradebcps.com/*", 
+	"https://*.engradebcps.com/*", 
+	"file://*/*",
+	"storage"
+  ]
+}

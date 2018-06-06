@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+	<script src="popup.js"></script>
+	<script src="thirdparty/js/jquery-3.3.1.min.js"></script>
+	<script src="thirdparty/js/tether.min.js"></script>
+	<script src="thirdparty/js/popper.min.js"></script>
+	<script src="thirdparty/js/bootstrap.min.js"></script>
+	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+	<link rel="stylesheet" type="text/css" href="thirdparty/css/bootstrap.min.css">
+	
+</head>
+<body style="width:700px;height:700px">
+
+	<div class="row m-3">
+		<div class="col-sm-2 m-3">
+			<label>Average</label>
+			<select class="m-2" id="avgSelect">
+				<option value='mean' selected>Mean</option>
+				<option value='median'>Median</option>
+				<option value='mode'>Mode</option>
+			</select>
+			<label>Column Mgmt</label>
+			<div class="btn-group-vertical m-2" role="group" aria-label="Save and clear columns">
+				<button type="button" class="btn btn-primary" id="saveBtn">Save</button>
+				<button type="button" class="btn btn-secondary" id="clearBtn">Clear</button>
+				<!--<div class="btn-group" role="group">
+					<button class="btn dropdown-toggle" type="button" id="clearButton"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Clear
+					</button>
+					<div class="dropdown-menu" aria-labelledby="clearButton">
+						<a class="dropdown-item" href="#">First</a>
+						<a class="dropdown-item" href="#">Last</a>
+						<a class="dropdown-item" href="#">All</a>
+					</div>
+				</div>-->
+			</div>
+		</div>
+		<div class="col-sm">
+			<table class="table table-sm" id="stuTable">
+				<tr>
+					<th data-toggle="tooltip" data-placement="top" title="eh?">Name</th>
+					<th></th>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	
+</body>
+</html>
